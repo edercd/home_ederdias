@@ -21,7 +21,7 @@ if (isset($_POST['enviar'])) {
   if (empty($nome) || empty($email) || empty($telefone) || empty($assunto) || empty($mensagem)) {
     echo "Por favor, preencha todos os campos obrigatórios.";
   } else {
-    $to = "emailqualquer@gmail.com";
+    $to = "ederdcd@yahoo.com.br";
     $subject = "Novo Contato";
     $message = "Nome: " . $nome . "\n" .
                "Email: " . $email . "\n" .
@@ -64,12 +64,12 @@ if (isset($_POST['enviar'])) {
                             <!-- Text input Telefone-->
                             <div class="input-group input-group-sm mt-2">
                                 <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fas fa-phone-square-alt"></i></span>
-                                <input  onkeypress="return blocknumber();" id="textinputtelefone" name="tlelfone" placeholder="coloque um teolefone valido" class="form-control i" type="text" title="telefone" maxlength="15">
+                                <input  onkeypress="return blocknumber();" id="textinputtelefone" name="telefone" placeholder="coloque um teolefone valido" class="form-control i" type="text" title="telefone" maxlength="15">
                             </div>
                             <!--select assunto -->
                             <div class="input-group input-group-sm mt-2">
-                                <span class="input-group-text" name="assunto" for="selectassunto"><i class="fas fa-tasks"></i></span>
-                                <select class="form-select" id="selectassunto">
+                                <span class="input-group-text" for="selectassunto"><i class="fas fa-tasks"></i></span>
+                                <select name="assunto"class="form-select" id="selectassunto">
                                   <option value="0">Escolha um assunto:</option>
                                   <option value="1">logos</option>
                                   <option value="2">cartão de visita </option>
