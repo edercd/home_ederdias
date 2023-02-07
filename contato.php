@@ -21,7 +21,7 @@ if (isset($_POST['enviar'])) {
   if (empty($nome) || empty($email) || empty($telefone) || empty($assunto) || empty($mensagem)) {
     echo "Por favor, preencha todos os campos obrigatórios.";
   } else {
-    $to = "ederdcd@yahoo.com.br";
+    $to = "emailqualquer@gmail.com";
     $subject = "Novo Contato";
     $message = "Nome: " . $nome . "\n" .
                "Email: " . $email . "\n" .
