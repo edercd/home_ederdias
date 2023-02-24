@@ -1,6 +1,6 @@
 <div class="border border-dark mt-1 mb-3 pb-5 box-shadow">
                 <?php
-                $images = get_post_meta( get_the_ID(), $cmb->get_field_id( 'id_imagem' ), true );
+                $images = get_post_meta( get_the_ID(), $cmb->get_field_id( '_cmb_id_imagem' ), true );
                 ?>
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
